@@ -12,12 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit device configuration for Kindle Fire
-$(call inherit-product, device/amazon/hdx-common/lineage.mk)
-$(call inherit-product, device/amazon/apollo/full_apollo.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product-if-exists, vendor/cm/config/common_full_tablet_wifionly.mk)
+
+# Inherit telephony stuff.
+$(call inherit-product-if-exists, vendor/cm/config/data_only.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/amazon/apollo/device.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := apollo
+PRODUCT_NAME := lineage_apollo
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Kindle Fire HDX
+PRODUCT_MANUFACTURER := android
+PRODUCT_RELEASE_NAME := KFireHDX
 
 TARGET_SCREEN_WIDTH := 2560
 TARGET_SCREEN_HEIGHT := 1600
-
-PRODUCT_NAME := lineage_apollo
-PRODUCT_RELEASE_NAME := KFireHDX
