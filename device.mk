@@ -27,5 +27,6 @@ PRODUCT_CHARACTERISTICS := \
 
 ADDITIONAL_BUILD_PROPERTIES += \
 	ro.qcom.ad=1 \
-	ro.usb.pid=000d
+	ro.usb.pid=000d \
+	ro.sf.hwrotation=90
 
