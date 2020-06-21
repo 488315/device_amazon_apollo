@@ -1,12 +1,3 @@
-# Audio
-etc/acdbdata/APOLLO/Bluetooth_cal.acdb
-etc/acdbdata/APOLLO/General_cal.acdb
-etc/acdbdata/APOLLO/Global_cal.acdb
-etc/acdbdata/APOLLO/Handset_cal.acdb
-etc/acdbdata/APOLLO/Hdmi_cal.acdb
-etc/acdbdata/APOLLO/Headset_cal.acdb
-etc/acdbdata/APOLLO/Speaker_cal.acdb
-
 # WiFi firmware
 etc/firmware/ath6k/AR6004/hw3.0/bdata.bin
 etc/firmware/ath6k/AR6004/hw3.0/boardData_Apollo_ETSI.bin
