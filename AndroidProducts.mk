@@ -1,1 +1,1 @@
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_apollo.mk
